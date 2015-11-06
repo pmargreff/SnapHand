@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>PC-LAB</Machine>
+    <WindowsUser>pablo_000</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>c2cac205-1358-41e9-ac88-2f0b7585856d</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\obj\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>3C30A9D6DDB29F3382C1FAB402468048F231729736AE72C277179F9EB17CF62B</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>c2cac205-1358-41e9-ac88-2f0b7585856d_1.0.0.0_neutral__j23n9p23ar4sj</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>c2cac205-1358-41e9-ac88-2f0b7585856d_j23n9p23ar4sj!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>c2cac205-1358-41e9-ac88-2f0b7585856d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=pablo_000</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2015-11-06T13:20:10.286</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\bin\Debug\SnapHand.exe">
+      <PackagePath>SnapHand.exe</PackagePath>
+      <Modified>2015-11-06T13:36:29.449</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T09:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T09:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T09:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-23T09:01:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2015-11-06T13:19:41.491</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2015-11-06T13:36:29.305</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\bin\Debug\SnapHand.xr.xml">
+      <PackagePath>SnapHand.xr.xml</PackagePath>
+      <Modified>2015-11-06T13:36:29.293</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\pablo_000\documents\visual studio 2013\Projects\SnapHand\SnapHand\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2015-11-06T13:20:10.021</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
