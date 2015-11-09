@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace SnapHand
@@ -19,19 +20,21 @@ namespace SnapHand
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class SnapHand : Page
     {
-        bool GuideMode;
-        public MainPage()
+        public SnapHand()
         {
             this.InitializeComponent();
-            
         }
 
-        private void NewProjectButton_Click(object sender, RoutedEventArgs e)
+        private void Back_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SnapHand), null);
+            this.Frame.Navigate(typeof(MainPage), null);
         }
 
-      }
+        private void Save_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
 }

@@ -16,7 +16,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Button x:Name="ContinueProjectButton" Grid.Row="1"  Content="CONTINUAR PROJETO"  Margin="646,123,0,227" Width="300" Height="100" FontSize="26" />
-        <Button x:Name="NewProjectButton" Grid.Row="0"  Content="NOVO PROJETO"  Margin="646,233,0,117" Background="#B3B6B6B6" Width="300" Height="100" FontSize="30" />
+        <Button x:Name="NewProjectButton" Grid.Row="0"  Content="NOVO PROJETO"  Margin="646,233,0,117" Background="#B3B6B6B6" Width="300" Height="100" FontSize="30" Click="NewProjectButton_Click" />
         <CheckBox x:Name="HelpCheckBox" Content="USO ASSISTIDO" Margin="1121,181,25,230" Grid.Row="1" VerticalAlignment="Stretch" FontSize="16"/>
 
     </Grid>
