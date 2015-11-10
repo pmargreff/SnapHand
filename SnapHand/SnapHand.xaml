@@ -5,7 +5,14 @@
     xmlns:local="using:SnapHand"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:LightBuzz.Vitruvius.Controls"
     mc:Ignorable="d">
+    <Page.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FFD12929" Offset="1"/>
+        </LinearGradientBrush>
+    </Page.Background>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -15,6 +22,12 @@
 
         <!-- Back button and page title -->
         <Grid Grid.Column="0">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFF0F0F0" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="90"/>
                 <ColumnDefinition Width="*"/>
@@ -27,18 +40,22 @@
                     AutomationProperties.AutomationId="BackButton"
                     AutomationProperties.ItemType="Navigation Button"/>
             <TextBlock x:Name="pageTitle" Text="Camera" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
-                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Center" />
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Center" >
+            </TextBlock>
         </Grid>
 
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Background="#FFF0F0F0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.3*" />
-                <ColumnDefinition Width="0.7*" />
+                <ColumnDefinition Width="205*" />
+                <ColumnDefinition Width="478*" />
             </Grid.ColumnDefinitions>
-            <StackPanel Grid.Column="0" Margin="30,0">
-                <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Text="Capture" Margin="0,20" />
-                <Button Content="Save snapshot" HorizontalAlignment="Stretch" Click="Save_Click" />
-                </StackPanel>
+            <StackPanel Grid.Column="0" Margin="30,0"/>
+            <Button x:Name="Save_Click" Content="SAVE SNAPSHOT" HorizontalAlignment="Left" Margin="48,34,0,0" VerticalAlignment="Top" Width="300" Height="100" FontSize="30" Click="Save_Button" Background="#B3B6B6B6" Foreground="#FF0E0909" RequestedTheme="Light">
+                <Button.BorderBrush>
+                    <ImageBrush Stretch="Fill"/>
+                </Button.BorderBrush>
+            </Button>
+            <controls:KinectViewer Grid.Column="1" x:Name="viewer"/>
         </Grid>
     </Grid>
 </Page>

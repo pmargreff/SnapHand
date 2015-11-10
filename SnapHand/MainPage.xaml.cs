@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using WindowsPreview.Kinect;
+using LightBuzz.Vitruvius;
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace SnapHand
@@ -21,7 +23,7 @@ namespace SnapHand
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        bool GuideMode;
+        
         public MainPage()
         {
             this.InitializeComponent();
