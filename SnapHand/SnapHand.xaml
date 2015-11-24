@@ -50,12 +50,18 @@
                 <ColumnDefinition Width="478*" />
             </Grid.ColumnDefinitions>
             <StackPanel Grid.Column="0" Margin="30,0"/>
-            <Button x:Name="Save_Click" Content="SAVE SNAPSHOT" HorizontalAlignment="Left" Margin="48,34,0,0" VerticalAlignment="Top" Width="300" Height="100" FontSize="30" Click="Save_Button" Background="#B3B6B6B6" Foreground="#FF0E0909" RequestedTheme="Light">
+            <Button x:Name="Save_Button" Content="GRAVAR" HorizontalAlignment="Left" Margin="48,34,0,0" VerticalAlignment="Top" Width="300" Height="100" FontSize="30" Click="Click1" Background="#B3B6B6B6" Foreground="#FF0E0909" RequestedTheme="Light">
                 <Button.BorderBrush>
                     <ImageBrush Stretch="Fill"/>
                 </Button.BorderBrush>
             </Button>
             <controls:KinectViewer Grid.Column="1" x:Name="viewer"/>
+            <Button x:Name="Quit_Button" Content="SAIR" HorizontalAlignment="Left" Margin="48,0,0,65" VerticalAlignment="Bottom" Width="300" FontSize="30" Click="Click2" Background="#B3B6B6B6" Foreground="#FF0E0909" RequestedTheme="Light" Height="100">
+                <Button.BorderBrush>
+                    <ImageBrush Stretch="Fill"/>
+                </Button.BorderBrush>
+            </Button>
+            <TextBlock x:Name="WorkText" Margin="379,19,0,611" TextWrapping="Wrap" Text="" FontSize="50" SelectionChanged="TextBlock_SelectionChanged" Grid.Column="1" HorizontalAlignment="Left" Width="276" Foreground="#FF0C1115"/>
         </Grid>
     </Grid>
 </Page>

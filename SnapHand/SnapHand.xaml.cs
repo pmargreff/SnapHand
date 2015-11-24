@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Media;
+using Windows.UI;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -52,7 +54,11 @@ namespace SnapHand
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage), null);
+            string label = Quit_Button.Content.ToString(); 
+           
+            if (label.Equals("SAIR")){
+                this.Frame.Navigate(typeof(MainPage), null);
+            }
         }
 
         void Reader_MultiSourceFrameArrived(object sender, MultiSourceFrameArrivedEventArgs e)
@@ -94,6 +100,22 @@ namespace SnapHand
                     }
                 }
             }
+
+            // Body
+            using (var frame = reference.BodyFrameReference.AcquireFrame())
+            {
+                if (frame != null)
+                {
+                    var bodies = frame.Bodies();
+
+                    _playersController.Update(bodies);
+
+                    foreach (Body body in bodies)
+                    {
+                        viewer.DrawBody(body);
+                    }
+                }
+            }
         }
 
         void UserReporter_BodyEntered(object sender, UsersControllerEventArgs e)
@@ -107,7 +129,57 @@ namespace SnapHand
             viewer.Clear();
         }
 
-        private void Save_Button(object sender, RoutedEventArgs e)
+        private void Click1(object sender, RoutedEventArgs e)
+        {
+            string label = Save_Button.Content.ToString();
+
+            if (label.Equals("GRAVAR"))
+            {
+                RecordClick();
+            }
+            else 
+            {
+                SaveClick();
+            }
+        }
+
+        private void Click2(object sender, RoutedEventArgs e)
+        {
+            string label = Quit_Button.Content.ToString();
+
+            if (label.Equals("SAIR"))
+            {
+                Back_Click(null, null);
+            } 
+            else
+            {
+                CancelClick();
+            }
+
+        }
+
+        private void RecordClick()
+        {
+            Save_Button.Content = "EFETIVAR SESSÃO";
+            Quit_Button.Content = "CANCELAR SESSÃO";
+            WorkText.Text = "Gravando";
+        }
+
+        private void SaveClick()
+        {
+            Save_Button.Content = "GRAVAR";
+            Quit_Button.Content = "SAIR";
+            WorkText.Text = "";
+        }
+
+        private void CancelClick()
+        {
+            Save_Button.Content = "GRAVAR";
+            Quit_Button.Content = "SAIR";
+            WorkText.Text = "";
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
         }
